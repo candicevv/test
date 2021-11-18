@@ -9,9 +9,10 @@ tags: []
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
-library(ggplot2)
 library(dplyr)
 library(tidyr)
+library(DT)
+library(ggplot2)
 library(plotly)
 
 ```
@@ -25,14 +26,15 @@ To create a better iterative plots, I try to convert the ggplots created in last
 
 Here, I only try to use *ggplotly* as a converter.
 
-```{r total, echo=FALSE, fig.cap='Total value of commitments trend', tidy=FALSE}
 
+```{r echo=TRUE}
 total = purpose %>% 
   group_by(TIME)%>%
   summarise(total_commitement = sum(Value, na.rm = TRUE))
 
 p<-ggplot(data=total, aes(x=TIME, y=total_commitement)) +
   geom_point(shape = 1)  
+
 ggplotly(p)
 
 ```
