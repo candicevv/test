@@ -2,7 +2,9 @@
 title: Visualization using ggplot
 author: 'Qiyuan Yang'
 date: '2021-11-13'
-
+slug: visualization-using-ggplot
+categories: ['Statistics']
+tags: []
 ---
 
 ```{r setup, include=FALSE}
@@ -18,9 +20,7 @@ purpose= read.csv("LENDING.csv")
 
 ```
 
-This dataset contains information of the value of commitments of each type of loan purpose from January 2018 to November 2018. 
-
-Here we try to show a total trend of the value of commitments.\@ref(fig:total)
+This dataset contains information of the value of commitments of each type of loan purpose from January 2018 to November 2018. Here we try to show a total trend of the value of commitments.\@ref(fig:total)
 
 ```{r total, echo=FALSE, fig.cap='Total value of commitments trend', tidy=FALSE}
 
