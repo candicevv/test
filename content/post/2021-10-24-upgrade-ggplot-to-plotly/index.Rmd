@@ -21,11 +21,10 @@ purpose= read.csv("LENDING.csv")
 
 ```
 
-To create a better interative plots, I try to convert the ggplots created in last post into a Ploty plot.
+To create a better iterative plots, I try to convert the ggplots created in last post into a Ploty plot.
 
 Here, I only try to use *ggplotly* as a converter.
 
-<!--more-->
 ```{r total, echo=FALSE, fig.cap='Total value of commitments trend', tidy=FALSE}
 
 total = purpose %>% 
