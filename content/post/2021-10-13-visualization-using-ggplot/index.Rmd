@@ -20,8 +20,6 @@ purpose= read.csv("LENDING.csv")
 
 This dataset contains information of the value of commitments of each type of loan purpose from January 2018 to November 2018. 
 
-<!--more-->
-
 Here we try to show a total trend of the value of commitments.\@ref(fig:total)
 
 ```{r total, echo=FALSE, fig.cap='Total value of commitments trend', tidy=FALSE}
